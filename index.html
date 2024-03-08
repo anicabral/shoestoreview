@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Product Card/Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <script src="./index.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <!-- card left -->
+      <div class="product-imgs">
+        <div class="img-display">
+          <div class="img-showcase">
+            <img src="./images/4.jpg" class="thumbnail" alt="shoe image">
+            <!-- <img src="./images/tenis-black-top.jpg" class="thumbnail" alt="shoe image">
+            <img src="./images/tenis-black-zoom.jpg" class="thumbnail" alt="shoe image"> -->
+          </div>
+        </div>
+        <div class="img-select">
+          <div class="img-item">
+            <a href="#" data-id="1">
+              <img src="./images/1.jpg" alt="shoe image">
+            </a>
+          </div>
+          <div class="img-item">
+            <a href="#" data-id="2">
+              <img src="./images/2.jpg" alt="shoe image">
+            </a>
+          </div>
+          <div class="img-item">
+            <a href="#" data-id="3">
+              <img src="./images/3.jpg" alt="shoe image">
+            </a>
+          </div>
+          <div class="img-item">
+            <a href="#" data-id="4">
+              <img src="./images/4.jpg" alt="shoe image">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- card right -->
+      <div class="product-content">
+        <h2 class="product-title"> Nike Code Dunk</h2>
+        <div class="product-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>4.7(21)</span>
+        </div>
+
+        <div class="product-price">
+          <p class="price"> Price: <span> $249.00 (5%)</span></p>
+        </div>
+
+        <div class="product-detail">
+          <h2>About This Item:</h2>
+          <p>
+            Introducing "Code Dunk" Sneakers – where style meets JavaScript wit! Crafted with precision for maximum coding comfort, these kicks are the syntax sensation you've been waiting for. Walk the walk of a coding maestro, strutting in sleek design and debug your way to style supremacy. Lace up and let your code do the talking with "ScriptSprint" – where every step is a function call to fabulousness! </p>
+          <ul>
+            <li class="current-size"> Selected size: <span> 38 </span></li>
+          </ul>
+        </div>
+
+
+        <div class="purchase-info">
+          <div class="size-buttons">
+            <label>
+              <input type="radio" name="size" value="36"> 36
+            </label>
+            <label>
+              <input type="radio" name="size" value="37"> 37
+            </label>
+            <label>
+              <input type="radio" name="size" value="38"> 38
+            </label>
+            <label>
+              <input type="radio" name="size" value="39"> 39
+            </label>
+          </div>
+          <div class="color-buttons" id="property-color">
+            <p class="color-title"> Color: Black</p>
+            <div class="product-color-container">
+              <label for="black">
+                <input
+                  type="radio"
+                  class="color-radio-input"
+                  name="color"
+                  id="black"
+                  value="black"
+                  checked
+                />
+                <p
+                  class="color-black"
+                >
+                  Black
+                </p>
+              </label>
+              <label for="green">
+                <input
+                  type="radio"
+                  class="color-radio-input"
+                  name="color"
+                  id="green"
+                  value="green"
+                />
+                <p
+                  class="color-green"
+                >
+                  Green
+                </p>
+              </label>
+              <label for="blue">
+                <input
+                  type="radio"
+                  class="color-radio-input"
+                  name="color"
+                  id="blue"
+                  value="blue"
+                />
+                <p
+                  class="color-blue"
+                >
+                  Blue
+                </p>
+              </label>
+              <label for="red">
+                <input
+                  type="radio"
+                  class="color-radio-input"
+                  name="color"
+                  id="red"
+                  value="red"
+                />
+                <p
+                  class="color-red"
+                >
+                  Red
+                </p>
+              </label>
+            </div>
+          </div>
+          <div class="quantity-buttons">
+            <p class="quantity-title">Quantity</p>
+            <button class="button-quantity" id="decrease-quantity"> - </button>
+            <input type="text" id="quantity" value="1" class="product-quantity" />
+            <button class="button-quantity" id="increase-quantity"> + </button>
+          </div>
+          <button type="button" class="btn-add-to-cart"> Add to Cart </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
