@@ -13,6 +13,7 @@ The goal of this project is to practice web development skills, including creati
 
 ## Work in Progress 
 
-### Cart Functionality 
-- **Add to Cart:** Implement the functionality to add the selected product to the shopping cart.
-- **View Cart:** Allow users to view the items currently in the shopping cart.
+### Cart 
+- Functionality to add the selected product to the shopping cart.
+- Allow users to view the items currently in the shopping cart.
+- The total price is adjusted accordingly to the quantity of products.
